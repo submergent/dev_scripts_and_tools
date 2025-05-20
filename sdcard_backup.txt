@@ -1,0 +1,10 @@
+Copying/Backing sdcard
+--------------------------------
+
+made image with:
+sudo dd if=/dev/sdb bs=1M | pv | dd of=eupasc_xu4_ubuntu.img
+
+wrote it to another SDCard with:
+sudo dd if=eupasc_xu4_ubuntu.img of=/dev/sdb bs=1M
+
+---------
